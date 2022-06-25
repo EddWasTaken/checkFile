@@ -1,0 +1,25 @@
+package "checkFile .ggo file"
+version "1.0"
+purpose "checking if file extension matches the file type"
+
+
+# group definition
+
+defgroup "optGroup" groupdesc="A group to make sure at least one option is used" required
+
+# --file; -f
+
+groupoption "file" f "One or more files, up to 5" string typestr="filename" group="optGroup" multiple(1-10)
+
+# --batch; -b
+
+groupoption "batch" b "File with filenames" string typestr="file with filenames" group="optGroup"
+
+# --dir; -d
+
+groupoption "dir" d "Directory" string typestr="dirname" group="optGroup"
+
+# --help; -h
+
+groupoption "help" h "Help - options list" group="optGroup"
+
