@@ -4,4 +4,4 @@
 ### This project checks if the given files' extension is the real one, or if it was changed after the making of the file.
 
 
-## Author: Eduardo Margarido
+Author: Eduardo Margarido
